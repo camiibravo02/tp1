@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2? family=Anek+Telugu:wght@500&family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Inter:wght@600&family=Open+Sans:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(252,0,0,1) 125%);
+    padding: 12px 24px;
+    align-items: center;
+}
+
+header>nav>ul {
+    display: flex;
+    list-style-type: none;
+    color: white;
+    gap: 15px;
+}
+
+header>nav>ul>li>a {
+    color: gray;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+header>nav>ul>li:last-child>a{
+color: green;
+}
+
+header>nav>ul>li>a:hover {
+    color: #ffff
+}
+
+
+
+
+/* Clases propias */
+
+.headerLogo {
+    filter:drop-shadow(2px 2px 0px);
+    -webkit-filter:drop-shadow(2px 2px 0px);
+}
+
+.bannerPrincipal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    background: url("./images/Gnota_34722.jpg"),
+        #00000091;
+    background-blend-mode: color;
+    height: 70vh;
+    color: white;
+    font-family: 'Anek Telugu', sans-serif;
+    padding: 7%;
+    text-align: end;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.bannerPrincipal button{
+    width: fit-content;
+    cursor: pointer;
+    padding: 4px 8px;
+    margin-top: .8em;
+    background-color: green;
+    color:white;
+    border: 0px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* cards */
+
+
+.titleCards {
+    display: flex;
+    margin: 0px;
+    font-size: .75em;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.titleCards div:last-child {
+    margin-top: 2px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 25%;
+    font-family: 'Anek Telugu', sans-serif;
+    border: 1px solid rgba(161, 161, 161, 0.26)
+}
+
+
+.card .image {
+    height: 240px;
+background-size: cover;
+background-position-x: center;
+}
+
+.imga {
+background-image: url("https://cdn.pixabay.com/photo/2017/06/08/19/44/coca-cola-2384651__340.jpg");
+}
+
+.imgb {
+    background-image: url("https://cdn.pixabay.com/photo/2016/06/11/09/51/coca-cola-1449843__340.jpg");
+}
+
+.imgc {
+    background-image: url("https://cdn.pixabay.com/photo/2014/09/26/19/51/drink-462776__340.jpg")
+}
+
+.subtitle {
+    display: flex;
+}
+
+.subtitleA {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    font-size: small;
+    font-weight: 700;
+    color: black;
+    padding: 4px 6px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.subtitleB {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    font-size: small;
+    font-weight: 700;
+    color: white;
+    padding: 4px 6px 0px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.texts {
+    margin: 0 15px;
+}
+
+.titles {
+    margin: 15px 0;
+}
+
+.title {
+font-weight: bold;
+}
+
+.lorem {
+    font-size: small;
+}
+
+/* Publicidad */
+
+.pub {
+    font-family: 'Anek Telugu', sans-serif;
+    margin: 35px 0;
+    display: flex;
+    height: 45vh;
+    gap: 2px;
+    color: white;
+}
+
+.pub .image {
+    background-image: url("https://cdn.pixabay.com/photo/2020/06/08/19/10/glasses-5275782__340.jpg");
+    height: 100%;
+    width: 100%;
+}
+
+.pub .text {
+    background-color: gray;
+    padding: 15px;
+}
+
+.pub .text div:first-child {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.pub .text button {
+    margin: 15px 0px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border:2px solid;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Formulario */
+
+.lowercase {
+    text-transform: none;
+}
+
+.lowercase a {
+    color: black;
+}
+
+.formmulario {
+    width: 100%;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    padding: 0px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    justify-items:  center;
+}
+
+form>div>input {
+    padding: 2px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    border: 2px solid lightgray;
+}
+
+form>textarea {
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 4px 0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid lightgray;
+}
+
+form>button {
+    width: 100%;
+    color: white;
+    background-color: green;
+    padding: 9px 0;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+/* Footer */
+
+footer ul {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'Anek Telugu', sans-serif;
+    list-style-type: none;
+    justify-content: space-around;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.9682247899159664) 0%, rgb(3, 64, 95) 36%, rgb(2, 74, 102) 100%);
+}
+
+footer ul li {
+    list-style: none;
+    width: 10%;
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
