@@ -1,311 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2? family=Anek+Telugu:wght@500&family=Inter:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Inter:wght@600&family=Open+Sans:wght@500&display=swap');
-
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(252,0,0,1) 125%);
-    padding: 12px 24px;
-    align-items: center;
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@500&display=swap');*/
+
+
+.header{
+    background-color: rgba(53,58,64,255);
+    padding: 0 3em;
 }
 
-header>nav>ul {
-    display: flex;
-    list-style-type: none;
-    color: white;
-    gap: 15px;
-}
-
-header>nav>ul>li>a {
+.cont>li>a{
     color: gray;
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    transition: all .2s;
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    -ms-transition: all .2s;
-    -o-transition: all .2s;
+    font-size: small;
 }
 
-header>nav>ul>li:last-child>a{
-color: green;
+.nav>li:last-child a{
+    color: rgb(41, 167, 68);
 }
 
-header>nav>ul>li>a:hover {
-    color: #ffff
+.nav-link:hover{
+    color: whitesmoke !important;
 }
 
-
-
-
-/* Clases propias */
-
-.headerLogo {
-    filter:drop-shadow(2px 2px 0px);
-    -webkit-filter:drop-shadow(2px 2px 0px);
+.botontickets{
+    background-color: rgb(41, 167, 68) !important;
+    color:white !important;
 }
 
-.bannerPrincipal {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
-    background: url("./images/Gnota_34722.jpg"),
-        #00000091;
-    background-blend-mode: color;
-    height: 70vh;
-    color: white;
-    font-family: 'Anek Telugu', sans-serif;
+.banner{
+    background: url(./images/Gnota_34722.jpg) no-repeat center rgba(0, 0, 0, 0.5); 
+    background-blend-mode:color;
+    background-size: 100% 100%;
+    height: 75vh;
     padding: 7%;
-    text-align: end;
-    justify-content: end;
-    align-items: flex-end;
 }
 
-.bannerPrincipal button{
-    width: fit-content;
-    cursor: pointer;
-    padding: 4px 8px;
-    margin-top: .8em;
-    background-color: green;
-    color:white;
-    border: 0px;
+.card-text{
+    font-size: small;
+}
+
+.subA{
+    background-color: rgba(254,193,7,255);
+    font-size: small;
+    color: black;
+    font-weight: 500;
     border-radius: 4px;
+    padding: 0.2rem  0.3rem;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
 
-/* cards */
-
-
-.titleCards {
-    display: flex;
-    margin: 0px;
-    font-size: .75em;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-}
-
-.titleCards div:last-child {
-    margin-top: 2px;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    width: 25%;
-    font-family: 'Anek Telugu', sans-serif;
-    border: 1px solid rgba(161, 161, 161, 0.26)
-}
-
-
-.card .image {
-    height: 240px;
-background-size: cover;
-background-position-x: center;
-}
-
-.imga {
-background-image: url("https://cdn.pixabay.com/photo/2017/06/08/19/44/coca-cola-2384651__340.jpg");
-}
-
-.imgb {
-    background-image: url("https://cdn.pixabay.com/photo/2016/06/11/09/51/coca-cola-1449843__340.jpg");
-}
-
-.imgc {
-    background-image: url("https://cdn.pixabay.com/photo/2014/09/26/19/51/drink-462776__340.jpg")
-}
-
-.subtitle {
-    display: flex;
-}
-
-.subtitleA {
-    display: flex;
-    align-items: center;
-    background-color: orange;
+.subB{
+    background-color: rgba(23,162,183,255);
     font-size: small;
-    font-weight: 700;
-    color: black;
-    padding: 4px 6px;
+    color: blanchedalmond;
+    font-weight: 500;
     border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    padding: 0.2rem  0.3rem;
 }
 
-.subtitleB {
-    display: flex;
-    align-items: center;
-    background-color: aqua;
+.subC{
+    background-color:rgb(108, 117, 124);
+    font-size: 0.9rem;
+    color: blanchedalmond;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 0.2rem 0.3rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.subD{
+    background-color: rgb(221, 53, 68);
     font-size: small;
-    font-weight: 700;
-    color: white;
-    padding: 4px 6px 0px;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    color: blanchedalmond;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 0.2rem  0.4rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
-.texts {
-    margin: 0 15px;
+.letterspacing{
+    letter-spacing:0.9px;
 }
 
-.titles {
-    margin: 15px 0;
+
+.backg{
+    background-color: rgb(53, 58, 64);
 }
 
-.title {
-font-weight: bold;
+.letraxs{
+    font-size: 0.9rem;
 }
 
-.lorem {
-    font-size: small;
+.btnenviar{
+    color: white !important;
+    background-color: rgb(150, 201, 62) !important;
 }
 
-/* Publicidad */
-
-.pub {
-    font-family: 'Anek Telugu', sans-serif;
-    margin: 35px 0;
-    display: flex;
-    height: 45vh;
-    gap: 2px;
-    color: white;
+.btnenviar:hover{
+    background-color: rgb(29, 114, 40) !important;
 }
 
-.pub .image {
-    background-image: url("https://cdn.pixabay.com/photo/2020/06/08/19/10/glasses-5275782__340.jpg");
-    height: 100%;
-    width: 100%;
+h5{
+    align-items: flex-end
 }
 
-.pub .text {
-    background-color: gray;
-    padding: 15px;
+.publicidad {
+    background-color: #6a767b;
+    max-width: auto;
+    min-width: 300;
 }
 
-.pub .text div:first-child {
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.pub .text button {
-    margin: 15px 0px;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    border:2px solid;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-/* Formulario */
-
-.lowercase {
-    text-transform: none;
-}
-
-.lowercase a {
-    color: black;
-}
-
-.formmulario {
-    width: 100%;
-}
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form {
-    padding: 0px;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form div {
-    width: 100%;
-    display: flex;
-    justify-items:  center;
-}
-
-form>div>input {
-    padding: 2px;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
-    border: 2px solid lightgray;
-}
-
-form>textarea {
-    box-sizing: border-box;
-    padding: 2px;
-    margin: 4px 0;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    border: 2px solid lightgray;
-}
-
-form>button {
-    width: 100%;
-    color: white;
-    background-color: green;
-    padding: 9px 0;
-    border: none;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-}
-
-/* Footer */
-
-footer ul {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    font-family: 'Anek Telugu', sans-serif;
-    list-style-type: none;
-    justify-content: space-around;
+.piePagina {
     background: linear-gradient(90deg, rgba(2, 0, 36, 0.9682247899159664) 0%, rgb(3, 64, 95) 36%, rgb(2, 74, 102) 100%);
-}
-
-footer ul li {
-    list-style: none;
-    width: 10%;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 
-footer a {
+.fondo{
+    background-color: #6a767b;
+    max-width: auto;
+    min-width: 300;
+}
+
+/*footer*/
+
+div.navbar, .navbar-expand-sm{
+    background-color: rgba(12, 66, 99);
+    height: 15vh;
+}
+
+div.navbar-collapse a{
     color: white;
-    text-decoration: none;
+}
+
+a.nav-link.active.inicio{
+    color: white;
+
+}
+
+a.nav-link.active.inicio:hover{
+    color: rgb(4, 4, 40);
 }
